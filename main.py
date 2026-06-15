@@ -17,10 +17,10 @@ while True:
 
     mask = object_detector.apply(roi)
 
-    contours, _ = cv2.findContours(mask, cv2.RETR_TREE, cv2.CHAIN_APPROX_SIMPLE)
-    for cnt in contours:
+    # contours, _ = cv2.findContours(mask, cv2.RETR_TREE, cv2.CHAIN_APPROX_SIMPLE)
+    # for cnt in contours:
         # calculate area and remove small elements
-        area = cv2.contourArea(cnt)
+        # area = cv2.contourArea(cnt)
         # if area > 100:
             # cv2.drawContours(frame, [cnt], -1, (0, 255, 0), 2)
             # x, y, w, h = cv2.boundingRect(cnt)
